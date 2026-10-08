@@ -1,0 +1,19 @@
+[submodule "PerspectiveFields"]
+	path = PerspectiveFields
+	url = https://github.com/jinlinyi/PerspectiveFields.git
+
+[submodule "deps/Depth-Anything-V2"]
+	path = deps/Depth-Anything-V2
+	url = https://github.com/DepthAnything/Depth-Anything-V2.git
+
+[submodule "deps/GroundingDINO"]
+	path = deps/GroundingDINO
+	url = https://github.com/IDEA-Research/GroundingDINO.git
+
+[submodule "deps/segment-anything-2"]
+	path = deps/segment-anything-2
+	url = https://github.com/facebookresearch/segment-anything-2.git
+
+[submodule "envs/pytorch3d"]
+	path = envs/pytorch3d
+	url = https://github.com/facebookresearch/pytorch3d.git

@@ -1,0 +1,89 @@
+[
+  {
+    "name": "Sofa",
+    "category": "sofa",
+    "anchor": null,
+    "pos_abs": [0.0, -3.0],
+    "path": "our_assets/room/sofa/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Coffee_Table",
+    "category": "coffee table",
+    "anchor": "Sofa",
+    "rel_side": "front",
+    "gap": 0.5,
+    "path": "our_assets/room/coffee table/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Floor_Lamp",
+    "category": "floor lamp",
+    "anchor": "Sofa",
+    "rel_side": "right",
+    "gap": 0.2,
+    "path": "our_assets/room/floor lamp/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Armchair",
+    "category": "armchair",
+    "anchor": "Coffee_Table",
+    "rel_side": "front",
+    "gap": 0.5,
+    "path": "our_assets/room/armchair/0/mesh/sample.glb",
+    "rotation_deg": 180,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Table_Lamp",
+    "category": "table lamp",
+    "anchor": "Coffee_Table",
+    "rel_side": "top",
+    "gap": 0.0,
+    "path": "our_assets/room/table lamp/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Flower_Vase",
+    "category": "flower vase",
+    "anchor": "Table_Lamp",
+    "rel_side": "right",
+    "gap": 0.02,
+    "path": "our_assets/room/flower vase/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Potted_Tree",
+    "category": "potted tree",
+    "anchor": "Floor_Lamp",
+    "rel_side": "front",
+    "gap": 0.2,
+    "path": "our_assets/room/potted tree/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Storage_Bin",
+    "category": "storage bin",
+    "anchor": "Floor_Lamp",
+    "rel_side": "right",
+    "gap": 0.2,
+    "path": "our_assets/room/storage bin/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  }
+]

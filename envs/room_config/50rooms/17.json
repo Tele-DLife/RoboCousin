@@ -1,0 +1,158 @@
+[
+  {
+    "name": "BaseCabinet_Main",
+    "category": "base cabinet",
+    "anchor": null,
+    "pos_abs": [
+      0.0,
+      -4.0
+    ],
+    "path": "our_assets/room/base cabinet/1/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "WallCabinet_01",
+    "category": "wall cabinet",
+    "anchor": "BaseCabinet_Main",
+    "rel_side": "top",
+    "gap": 0.65,
+    "path": "our_assets/room/wall cabinet/2/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Refrigerator_01",
+    "category": "refrigerator",
+    "anchor": "BaseCabinet_Main",
+    "rel_side": "left",
+    "gap": 0.05,
+    "path": "our_assets/room/refrigerator/1/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Dining_Table",
+    "category": "dining table",
+    "anchor": "BaseCabinet_Main",
+    "rel_side": "front",
+    "gap": 1.5,
+    "path": "our_assets/room/dining table/3/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Dining_Chair_1",
+    "category": "dining chair",
+    "anchor": "Dining_Table",
+    "rel_side": "front",
+    "gap": 0.02,
+    "path": "our_assets/room/dining chair/4/mesh/sample.glb",
+    "rotation_deg": 180,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Dining_Chair_2",
+    "category": "dining chair",
+    "anchor": "Dining_Table",
+    "rel_side": "back",
+    "gap": 0.02,
+    "path": "our_assets/room/dining chair/6/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Dining_Chair_3",
+    "category": "dining chair",
+    "anchor": "Dining_Table",
+    "rel_side": "right",
+    "gap": 0.02,
+    "path": "our_assets/room/dining chair/6/mesh/sample.glb",
+    "rotation_deg": -90,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Flower_Vase_01",
+    "category": "flower vase",
+    "anchor": "Dining_Table",
+    "rel_side": "top",
+    "gap": 0.0,
+    "path": "our_assets/room/flower vase/6/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Apple",
+    "category": "apple",
+    "anchor": "Flower_Vase_01",
+    "rel_side": "right",
+    "gap": 0.03,
+    "path": "our_assets/room/apple/2/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Microwave_01",
+    "category": "microwave",
+    "anchor": "BaseCabinet_Main",
+    "rel_side": "top",
+    "gap": 0.0,
+    "path": "our_assets/room/microwave/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Pot_01",
+    "category": "pot",
+    "anchor": "Microwave_01",
+    "rel_side": "right",
+    "gap": 0.1,
+    "path": "our_assets/room/pot/5/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Plant_01",
+    "category": "potted tree",
+    "anchor": "BaseCabinet_Main",
+    "rel_side": "right",
+    "gap": 0.05,
+    "path": "our_assets/room/potted tree/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "toilet",
+    "category": "toilet",
+    "anchor": "Plant_01",
+    "rel_side": "front",
+    "gap": 0.5,
+    "path": "our_assets/room/toilet/0/mesh/sample.glb",
+    "rotation_deg": -90,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "bathtub",
+    "category": "bathtub",
+    "anchor": "Plant_01",
+    "rel_side": "front",
+    "gap": 1.0,
+    "path": "our_assets/room/bathtub/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Crib",
+    "category": "crib",
+    "anchor": null,
+    "pos_abs": [2.0, -2.5],
+    "path": "our_assets/room/crib/1/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Kids_Table",
+    "category": "kids table",
+    "anchor": "Crib",
+    "rel_side": "right",
+    "gap": 1.0,
+    "path": "our_assets/room/kids table/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Kids_Chair",
+    "category": "kids chair",
+    "anchor": "Crib",
+    "rel_side": "front",
+    "gap": 0.3,
+    "path": "our_assets/room/kids chair/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Children_Rocking_Chair",
+    "category": "children rocking chair",
+    "anchor": "Kids_Table",
+    "rel_side": "front",
+    "gap": 1.0,
+    "path": "our_assets/room/children rocking chair/0/mesh/sample.glb",
+    "rotation_deg": 15,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Children_Coat_Rack",
+    "category": "children coat rack",
+    "anchor": "Children_Rocking_Chair",
+    "rel_side": "right",
+    "gap": 0.3,
+    "path": "our_assets/room/children coat rack/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Kids_Floor_Lamp",
+    "category": "kids floor lamp",
+    "anchor": "Crib",
+    "rel_side": "right",
+    "gap": 0.2,
+    "path": "our_assets/room/kids floor lamp/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Toy_Blocks_0",
+    "category": "toy blocks",
+    "anchor": "Kids_Chair",
+    "rel_side": "front",
+    "gap": 0.1,
+    "path": "our_assets/room/toy blocks/0/mesh/sample.glb",
+    "rotation_deg": 180,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Toy_Blocks_1",
+    "category": "toy blocks",
+    "anchor": "Toy_Blocks_0",
+    "rel_side": "left",
+    "gap": 0.0,
+    "path": "our_assets/room/toy blocks/0/mesh/sample.glb",
+    "rotation_deg": 45,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Plushie",
+    "category": "plushie",
+    "anchor": "Kids_Chair",
+    "rel_side": "right",
+    "gap": 0.2,
+    "path": "our_assets/actor/plushie/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  }
+]

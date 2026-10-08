@@ -1,0 +1,96 @@
+[
+  {
+    "name": "Bed",
+    "category": "bed",
+    "anchor": null,
+    "pos_abs": [0, 0],
+    "path": "our_assets/room/bed/1/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Nightstand_L",
+    "category": "nightstand",
+    "anchor": "Bed",
+    "pos_abs": null,
+    "rel_side": "left",
+    "gap": 0.5,
+    "path": "our_assets/room/nightstand/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Nightstand_R",
+    "category": "nightstand",
+    "anchor": "Bed",
+    "pos_abs": null,
+    "rel_side": "right",
+    "gap": 0.5,
+    "path": "our_assets/room/nightstand/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Wardrobe",
+    "category": "wardrobe",
+    "anchor": "Bed",
+    "pos_abs": null,
+    "rel_side": "back",
+    "gap": 2.0,
+    "path": "our_assets/room/wardrobe/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Desk",
+    "category": "desk",
+    "anchor": "Bed",
+    "pos_abs": null,
+    "rel_side": "front",
+    "gap": 2.0,
+    "path": "our_assets/room/desk/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Chair",
+    "category": "chair",
+    "anchor": "Desk",
+    "pos_abs": null,
+    "rel_side": "front",
+    "gap": 0.5,
+    "path": "our_assets/room/chair/0/mesh/sample.glb",
+    "rotation_deg": 180,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Floor_Lamp",
+    "category": "floor lamp",
+    "anchor": "Desk",
+    "pos_abs": null,
+    "rel_side": "right",
+    "gap": 1.0,
+    "path": "our_assets/room/floor lamp/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Potted_Plant",
+    "category": "potted tree",
+    "anchor": "Wardrobe",
+    "pos_abs": null,
+    "rel_side": "right",
+    "gap": 1.0,
+    "path": "our_assets/room/potted tree/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  }
+]

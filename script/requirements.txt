@@ -1,0 +1,60 @@
+#
+# RoboTwin (core) + custom pipelines (assets / backgrounds / cousin desk)
+# NOTE:
+# - We intentionally keep this as a pip requirements file. The original RoboTwin conda env
+#   may also install system libs (CUDA, OpenGL/EGL, ffmpeg, etc.).
+# - Some vendored repos under `deps/` (GroundingDINO, Depth-Anything-V2, SAM2, ...) are used
+#   via sys.path bootstrapping; their Python dependencies still need to be installed here.
+#
+
+# --- Core runtime ---
+torch==2.4.1
+torchvision
+sapien==3.0.0b1
+mplib==0.2.1
+gymnasium==0.29.1
+transforms3d==0.4.2
+scipy==1.10.1
+numpy
+pyyaml
+trimesh==4.4.3
+open3d==0.18.0
+h5py
+zarr
+pydantic
+termcolor
+matplotlib
+
+# --- Media I/O ---
+imageio==2.34.2
+imageio-ffmpeg==0.5.1
+moviepy
+av
+
+# --- Custom assets pipeline (our_assets + contact points) ---
+# (mostly covered by core: numpy/trimesh/transforms3d)
+
+# --- Cousin desk pipeline / ACDC extraction (GroundingDINO + DepthAnythingV2 + rendering utils) ---
+opencv-python
+pillow
+scikit-image
+shapely
+supervision
+
+# Offscreen rendering / snapshot generation (egl)
+pyglet<2
+pyrender
+PyOpenGL
+
+# --- LLM / layout generation / description generation ---
+openai
+tenacity
+transformers==5.3.0
+tokenizers==0.22.2
+huggingface-hub==1.6.0
+sentence-transformers==5.3.0
+azure==4.0.0
+azure-ai-inference
+
+# --- Optional experiment tracking ---
+wandb

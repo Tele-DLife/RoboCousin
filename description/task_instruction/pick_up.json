@@ -1,0 +1,29 @@
+{
+  "full_description": "pick up one object from the table with the appropriate arm and lift it",
+  "schema": "{B} is the target object label; {a} is the arm used (left or right)",
+  "preference": "num of words should not exceed 12",
+  "seen": [
+    "Pick up {B} with {a}.",
+    "Use {a} to grab {B}.",
+    "Lift {B} using {a}.",
+    "Grab {B} with {a}.",
+    "Take {B} with {a}.",
+    "Pick {B} up with {a}.",
+    "Reach for {B} with {a}.",
+    "Grasp {B} using {a}.",
+    "Hold {B} with {a}.",
+    "Catch {B} with {a}.",
+    "Use {a} to pick up {B}.",
+    "Lift {B} off the table with {a}.",
+    "Grab and lift {B} with {a}.",
+    "Pick {B} using {a}.",
+    "Secure {B} with {a}."
+  ],
+  "unseen": [
+    "Pick up {B} with {a}.",
+    "Grab {B} using {a}.",
+    "Lift {B} with {a}.",
+    "Take {B} using {a}.",
+    "Use {a} for {B}."
+  ]
+}

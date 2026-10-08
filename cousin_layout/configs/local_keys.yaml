@@ -1,0 +1,10 @@
+qwen_client:
+  api_key: xxx
+
+paths:
+  checkpoint_dir: /abs/path/to/checkpoints
+
+pipeline:
+  RealWorldExtractor:
+    call:
+      gpt_api_key: xxx

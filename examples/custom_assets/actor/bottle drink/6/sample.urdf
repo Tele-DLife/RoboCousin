@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<robot name="sample">
+   <link name="sample">
+      <visual>
+         <origin xyz="0 0 0" rpy="1.5708 0.0 0.0"/>
+         <geometry>
+            <mesh filename="mesh/sample.obj" scale="1.0 1.0 1.0"/>
+         </geometry>
+      </visual>
+      <collision>
+         <origin xyz="0 0 0" rpy="1.5708 0.0 0.0"/>
+         <geometry>
+            <mesh filename="mesh/sample_collision.obj" scale="1.0 1.0 1.0"/>
+         </geometry>
+         <gazebo>
+            <mu1>0.60</mu1>
+            <mu2>0.50</mu2>
+         </gazebo>
+      </collision>
+      <inertial>
+         <mass value="0.5500"/>
+         <origin xyz="0 0 0"/>
+         <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
+      <extra_info>
+         <scale>0.225000</scale>
+         <version>v0.1.7</version>
+         <category>bottle drink</category>
+         <description>tall glass bottle with green liquid and ice cubes</description>
+         <min_height>0.2</min_height>
+         <max_height>0.25</max_height>
+         <real_height>0.225</real_height>
+         <min_mass>0.4</min_mass>
+         <max_mass>0.7</max_mass>
+         <color>green</color>
+         <rgba>[0.0, 0.7, 0.0, 1.0]</rgba>
+         <generate_time>20260526161452</generate_time>
+         <gs_model>mesh/sample_gs.ply</gs_model>
+      </extra_info>
+   </link>
+   <custom_data>
+      <quality>
+         <MeshGeoChecker>YES</MeshGeoChecker>
+         <ImageSegChecker>NO, object is not centered and background is distorted with color artifacts.</ImageSegChecker>
+         <ImageAestheticChecker>5.390121221542358</ImageAestheticChecker>
+         <overall>NO</overall>
+      </quality>
+   </custom_data>
+</robot>

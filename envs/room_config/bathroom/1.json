@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Washbasin",
+    "category": "washbasin",
+    "anchor": null,
+    "pos_abs": [0.0, -3.0],
+    "path": "our_assets/room/washbasin/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Bathroom_Cabinet",
+    "category": "bathroom cabinet",
+    "anchor": "Washbasin",
+    "rel_side": "top",
+    "gap": 0.5,
+    "path": "our_assets/room/bathroom cabinet/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Washing_Machine",
+    "category": "washing machine",
+    "anchor": "Washbasin",
+    "rel_side": "right",
+    "gap": 0.1,
+    "path": "our_assets/room/washing machine/1/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Toilet",
+    "category": "toilet",
+    "anchor": "Washing_Machine",
+    "rel_side": "right",
+    "gap": 0.2,
+    "path": "our_assets/room/toilet/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Potted_Tree",
+    "category": "potted tree",
+    "anchor": "Toilet",
+    "rel_side": "right",
+    "gap": 0.2,
+    "path": "our_assets/room/potted tree/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+
+  {
+    "name": "Bathtub",
+    "category": "bathtub",
+    "anchor": "Potted_Tree",
+    "rel_side": "front",
+    "gap": 0.3,
+    "path": "our_assets/room/bathtub/2/mesh/sample.glb",
+    "rotation_deg": 90,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  }
+]

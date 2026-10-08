@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<robot name="sample">
+   <link name="sample">
+      <visual>
+         <origin xyz="0 0 0" rpy="1.5708 0.0 0.0"/>
+         <geometry>
+            <mesh filename="mesh/sample.obj" scale="1.0 1.0 1.0"/>
+         </geometry>
+      </visual>
+      <collision>
+         <origin xyz="0 0 0" rpy="1.5708 0.0 0.0"/>
+         <geometry>
+            <mesh filename="mesh/sample_collision.obj" scale="1.0 1.0 1.0"/>
+         </geometry>
+         <gazebo>
+            <mu1>0.70</mu1>
+            <mu2>0.55</mu2>
+         </gazebo>
+      </collision>
+      <inertial>
+         <mass value="1.0000"/>
+         <origin xyz="0 0 0"/>
+         <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
+      <extra_info>
+         <scale>0.636169</scale>
+         <version>v0.1.7</version>
+         <category>toy</category>
+         <description>purple toy race car with large wheels and aerodynamic body</description>
+         <min_height>0.25</min_height>
+         <max_height>0.3</max_height>
+         <real_height>0.275</real_height>
+         <min_mass>0.8</min_mass>
+         <max_mass>1.2</max_mass>
+         <color>purple</color>
+         <rgba>[0.6, 0.0, 0.8, 1.0]</rgba>
+         <generate_time>20260525112227</generate_time>
+         <gs_model>mesh/sample_gs.ply</gs_model>
+      </extra_info>
+   </link>
+   <custom_data>
+      <quality>
+         <MeshGeoChecker>YES</MeshGeoChecker>
+         <ImageSegChecker>NO, object is not fully isolated; background artifacts remain on the right side.</ImageSegChecker>
+         <ImageAestheticChecker>4.2737942934036255</ImageAestheticChecker>
+         <overall>NO</overall>
+      </quality>
+   </custom_data>
+</robot>

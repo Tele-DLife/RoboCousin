@@ -1,0 +1,105 @@
+[
+  {
+    "name": "Refrigerator",
+    "category": "refrigerator",
+    "anchor": null,
+    "pos_abs": [
+      0.0,
+      -3.0
+    ],
+    "path": "our_assets/room/refrigerator/2/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Dining_Table",
+    "category": "dining table",
+    "anchor": "Refrigerator",
+    "rel_side": "front",
+    "gap": 1.5,
+    "path": "our_assets/room/dining table/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Dining_Chair_1",
+    "category": "dining chair",
+    "anchor": "Dining_Table",
+    "rel_side": "front",
+    "gap": 0.02,
+    "path": "our_assets/room/dining chair/0/mesh/sample.glb",
+    "rotation_deg": 180,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Dining_Chair_2",
+    "category": "dining chair",
+    "anchor": "Dining_Table",
+    "rel_side": "back",
+    "gap": 0.02,
+    "path": "our_assets/room/dining chair/3/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Base_Cabinet",
+    "category": "base cabinet",
+    "anchor": null,
+    "pos_abs": [
+      -1.5,
+      -1.5
+    ],
+    "path": "our_assets/room/base cabinet/0/mesh/sample.glb",
+    "rotation_deg": -90,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Wall_Cabinet",
+    "category": "wall cabinet",
+    "anchor": "Base_Cabinet",
+    "rel_side": "top",
+    "gap": 1.0,
+    "path": "our_assets/room/wall cabinet/4/mesh/sample.glb",
+    "rotation_deg": -90,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Microwave",
+    "category": "microwave",
+    "anchor": "Base_Cabinet",
+    "rel_side": "top",
+    "gap": 0.0,
+    "path": "our_assets/room/microwave/0/mesh/sample.glb",
+    "rotation_deg": -90,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Pot",
+    "category": "pot",
+    "anchor": "Microwave",
+    "rel_side": "front",
+    "gap": 0.05,
+    "path": "our_assets/room/pot/3/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Apple",
+    "category": "apple",
+    "anchor": "Dining_Table",
+    "rel_side": "top",
+    "gap": 0.0,
+    "path": "our_assets/room/apple/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  }
+]

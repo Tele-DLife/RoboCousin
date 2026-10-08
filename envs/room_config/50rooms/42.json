@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Desk",
+    "category": "desk",
+    "anchor": null,
+    "pos_abs": [
+      0.0,
+      -3.0
+    ],
+    "path": "our_assets/room/desk/3/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Floor_lamp",
+    "category": "floor lamp",
+    "anchor": "Desk",
+    "rel_side": "left",
+    "gap": 0.1,
+    "path": "our_assets/room/floor lamp/1/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Office_Chair",
+    "category": "office chair",
+    "anchor": "Desk",
+    "rel_side": "front",
+    "gap": 0.3,
+    "path": "our_assets/room/office chair/2/mesh/sample.glb",
+    "rotation_deg": 180,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Printer",
+    "category": "printer",
+    "anchor": "Desk",
+    "rel_side": "right",
+    "gap": 0.5,
+    "path": "our_assets/room/printer/0/mesh/sample.glb",
+    "rotation_deg": -90,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Shelf",
+    "category": "shelf",
+    "anchor": "Desk",
+    "rel_side": "back",
+    "gap": 0.2,
+    "path": "our_assets/room/shelf/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Monitor",
+    "category": "monitor",
+    "anchor": "Desk",
+    "rel_side": "top",
+    "gap": 0.0,
+    "path": "our_assets/room/monitor/1/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Pen_Holder",
+    "category": "pen holder",
+    "anchor": "Monitor",
+    "rel_side": "right",
+    "gap": 0.05,
+    "path": "our_assets/room/pen holder/1/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Book",
+    "category": "book",
+    "anchor": "Pen_Holder",
+    "rel_side": "front",
+    "gap": 0.02,
+    "path": "our_assets/room/book/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  }
+]

@@ -1,0 +1,74 @@
+/models/
+data/*
+!data/process_stuck.py
+__pycache__/
+**/checkpoints/
+result/
+envs/curobo
+*.zip
+viewer_show.*
+eval_video/
+**/.DS_Store
+
+# Raw collected data & converted LeRobot datasets (local only)
+aloha-apple/
+groot_dataset/
+groot_lerobot*/
+**/groot_lerobot*/
+
+# GR00T eval / debug outputs (local only)
+debug_gr00t_video/
+debug_open_loop*.png
+
+# eval outputs (local only)
+eval_result/
+eval_bundle/
+
+# Code Generation
+assets/*
+!assets/_download.py
+!assets/files
+
+# Policy implementations (local only; not shipped on this branch)
+policy/
+
+envs/curobo/*
+
+.vscode
+/config.json
+
+/*.json*
+/*.txt
+
+our_assets/
+data_include_failure/
+*.ply
+*.glb
+*.usd
+*.usdz
+*.tar.gz
+*.7z
+test/
+tools/
+
+# Local one-off script experiments
+test_script/
+
+# Large generated assets (keep out of git)
+threeD-generation/obj/
+threeD-generation/data/
+
+# Local install state
+script/.install_state/
+
+# Local logs
+log.md
+error.log
+
+cousin_layout/desk_layout
+cousin_layout/demo
+cousin_layout/configs/local_keys.yaml
+
+# Local hex debugging utilities
+envs/hex_tcp_delta_reach.py
+script/build_hex2_embodiment_urdf.py

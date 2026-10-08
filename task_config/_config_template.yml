@@ -1,0 +1,117 @@
+render_freq: 1
+episode_num: 10
+use_seed: false
+save_freq: 15
+# After a successful episode, save this many extra observation frames (hold pose).
+# post_success_extra_frames: 5
+embodiment:
+- aloha-agilex
+language_num: 100
+domain_randomization:
+  random_background: false
+  cluttered_table: false
+  clean_background_rate: 0
+  random_head_camera_dis: 0
+  random_table_height: 0
+  random_light: false
+  crazy_random_light_rate: 0
+camera:
+  head_camera_type: D435
+  wrist_camera_type: D435
+  collect_head_camera: true
+  collect_wrist_camera: true
+data_type:
+  rgb: true
+  third_view: false
+  depth: false
+  pointcloud: false
+  endpose: true
+  qpos: true
+  mesh_segmentation: false
+  actor_segmentation: false
+pcd_down_sample_num: 1024
+pcd_crop: true
+save_path: ./data
+clear_cache_freq: 1
+collect_data: true
+eval_video_log: true
+use_custom_objects: false
+custom_objects_dir: our_assets/actor
+custom_objects: []
+custom_object_scale: 1.0
+custom_object_fix_root: false
+custom_object_mass: 0.01
+
+# Cousin coordinate options (script/cousin_coordinate.py)
+# - cousin_random_yaw: random yaw for non-target clutter / reference objects
+#   - true: random yaw for clutter; stacked items inherit their progenitor yaw
+#   - false: use per-instance best_snapshot_index / transform from layout JSON
+# - cousin_actor_random_yaw: random yaw for grasp-target labels only
+#   (cousin_target_labels). If unset, follows cousin_random_yaw.
+cousin_random_yaw: true
+# cousin_actor_random_yaw: true
+# Random instance id: sample from the first N entries of layout `instance_score_rank` (per object).
+# If `instance_score_rank` is missing or empty, sample from all instance folders under the class dir.
+cousin_instance_score_pool_top_k: 3
+# Uniform instance sampling (ignore similarity rank). Optional whitelist per label:
+# cousin_uniform_instance_sampling: true
+# cousin_instance_indices:
+#   "earbud case": [0, 1, 2]
+#   "bottle drink": null
+# # Anchor layout experiment (pick_up): base spawn anchor + relative clutter via temp layout JSON.
+# cousin_anchor_layout: true
+# cousin_anchor_clutter:
+#   - label: "bottle drink"
+#     offset_xy: [-0.15, -0.10]
+#   - label: "cup noodle"
+#     offset_xy: [0.15, -0.05]
+# pick_up + use_cousin_coordinate: step physics until dynamics settle before grasp (ontop stacks).
+# cousin_settle_before_grasp: true
+# cousin_settle_max_sim_steps: 8000
+# cousin_settle_stable_window: 48
+# cousin_settle_lin_tol: 0.02
+# cousin_settle_ang_tol: 0.2
+# cousin_settle_verbose: false
+# cousin_settle_with_render: false
+
+debug_held_object_collision: true
+place_clearance: 0.01
+place_bottom_safety_factor: 1.5
+place_dis: 0.1
+post_release_lift: 0.10
+release_settle_steps: 120
+
+basket_above_target: 0.08
+basket_lift_size_factor: 0.3
+basket_lift_margin: 0.05
+basket_max_lift: 0.22
+
+# -------- Held-object collision mitigation (for tasks like place_object_stand) --------
+# debug_held_object_collision: false          # print lift/approach params and report contacts with stand
+# held_object_lift_margin: 0.06              # meters, added to size-based lift
+# held_object_lift_size_factor: 1.0         # lift = factor * max_dim + margin (increase if long objects still collide)
+# held_object_min_lift: 0.06                 # meters, lower bound
+# held_object_max_lift: 0.25                 # meters, upper bound
+# held_object_extra_above_target: 0.02       # meters, extra Z above stand functional point before descending
+#
+# -------- Basket task avoidance tuning (place_object_basket) --------
+# basket_lift_margin: 0.06                   # meters (basket task default is conservative for precision)
+# basket_lift_size_factor: 0.5               # lift = factor * max_dim + margin
+# basket_min_lift: 0.15                      # meters (keeps original behavior by default)
+# basket_max_lift: 0.25                      # meters (cap; too high tends to reduce placement accuracy)
+# basket_above_target: 0.10                  # meters, minimum transit waypoint height above target before descending
+# basket_rim_clearance_factor: 0.6           # rim_clear = max(basket_above_target, factor * obj_max_dim + margin)
+# basket_rim_clearance_margin: 0.04          # meters
+# basket_rim_clearance_max: null             # optional cap for accuracy; set e.g. 0.20
+# basket_pre_dis: 0.12                       # meters, pre-place distance along fp axis (used to compute safe_above)
+# basket_place_dis: 0.02                     # meters, final distance along fp axis before release/open (larger => stay higher)
+# basket_place_dis_size_factor: 0.25         # effective_place_dis = max(basket_place_dis, factor * obj_max_dim + margin)
+# basket_place_dis_margin: 0.02              # meters
+# basket_drop_below_rim: 0.0                 # meters, adjust target Z to (basket_top_z - drop_below_rim) to avoid aiming inside basket
+#
+# -------- Placement tuning (for tasks like place_object_stand) --------
+# place_clearance: 0.01                      # meters, gap between object bottom and stand surface before releasing
+# place_bottom_safety_factor: 1.0            # >=1, more conservative bottom estimate (reduce pressing at the cost of higher drop)
+# place_dis: 0.03                            # meters, final approach distance before opening (bigger -> less pressing)
+# post_release_lift: 0.08                    # meters, lift gripper up after opening to avoid re-contact/drag
+# release_settle_steps: 60                   # sim steps to wait after opening before retreat (prevents dragging the object up)

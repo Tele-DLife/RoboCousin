@@ -1,0 +1,31 @@
+# Portions of this configuration are adapted from Digital Cousins:
+# https://github.com/cremebrule/digital-cousins
+# Modified by RoboCousin contributors.
+# Licensed under Apache-2.0; see licenses/Digital-Cousins-Apache-2.0.txt.
+models:
+  FeatureMatcher:
+    encoder: DinoV2Encoder
+    encoder_kwargs: null
+    gsam_box_threshold: 0.25
+    gsam_text_threshold: 0.25
+
+paths:
+  checkpoint_dir: null
+
+pipeline:
+  verbose: true
+  RealWorldExtractor:
+    call:
+      gpt_version: qwen-vl-max
+      max_retries: 3
+      retry_wait_time: 5.0
+      captions: null
+
+qwen_client:
+  agent_type: qwen2.5-vl-72b-instruct
+  verbose: true
+  profiles:
+    qwen2.5-vl-72b-instruct:
+      endpoint: https://dashscope.aliyuncs.com/compatible-mode/v1
+      api_version: null
+      model_name: qwen2.5-vl-72b-instruct

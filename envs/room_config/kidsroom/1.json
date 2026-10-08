@@ -1,0 +1,89 @@
+[
+  {
+    "name": "Children_Bed",
+    "category": "children bed",
+    "anchor": null,
+    "pos_abs": [2.0, -2.5],
+    "path": "our_assets/room/children bed/1/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Kids_Table_Chair_Set",
+    "category": "kids table chair set",
+    "anchor": "Children_Bed",
+    "rel_side": "right",
+    "gap": 1.0,
+    "path": "our_assets/room/kids table chair set/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Children_Coat_Rack",
+    "category": "children coat rack",
+    "anchor": "Kids_Table_Chair_Set",
+    "rel_side": "right",
+    "gap": 0.5,
+    "path": "our_assets/room/children coat rack/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Children_Rocking_Chair",
+    "category": "children rocking chair",
+    "anchor": "Kids_Table_Chair_Set",
+    "rel_side": "front",
+    "gap": 1.0,
+    "path": "our_assets/room/children rocking chair/0/mesh/sample.glb",
+    "rotation_deg": 15,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Kids_Floor_Lamp",
+    "category": "kids floor lamp",
+    "anchor": "Children_Bed",
+    "rel_side": "right",
+    "gap": 0.3,
+    "path": "our_assets/room/kids floor lamp/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Toy_Blocks_0",
+    "category": "toy blocks",
+    "anchor": "Children_Rocking_Chair",
+    "rel_side": "left",
+    "gap": 0.8,
+    "path": "our_assets/room/toy blocks/0/mesh/sample.glb",
+    "rotation_deg": 180,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Toy_Blocks_1",
+    "category": "toy blocks",
+    "anchor": "Toy_Blocks_0",
+    "rel_side": "left",
+    "gap": 0.0,
+    "path": "our_assets/room/toy blocks/0/mesh/sample.glb",
+    "rotation_deg": 45,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Plushie",
+    "category": "plushie",
+    "anchor": "Toy_Blocks_0",
+    "rel_side": "back",
+    "gap": 0.2,
+    "path": "our_assets/actor/plushie/0/mesh/sample.glb",
+    "rotation_deg": 50,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  }
+]

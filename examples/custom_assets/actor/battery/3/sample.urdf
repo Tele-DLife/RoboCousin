@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<robot name="sample">
+   <link name="sample">
+      <visual>
+         <origin xyz="0 0 0" rpy="1.5708 0.0 0.0"/>
+         <geometry>
+            <mesh filename="mesh/sample.obj" scale="1.0 1.0 1.0"/>
+         </geometry>
+      </visual>
+      <collision>
+         <origin xyz="0 0 0" rpy="1.5708 0.0 0.0"/>
+         <geometry>
+            <mesh filename="mesh/sample_collision.obj" scale="1.0 1.0 1.0"/>
+         </geometry>
+         <gazebo>
+            <mu1>0.60</mu1>
+            <mu2>0.50</mu2>
+         </gazebo>
+      </collision>
+      <inertial>
+         <mass value="0.7500"/>
+         <origin xyz="0 0 0"/>
+         <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
+      <extra_info>
+         <scale>0.140141</scale>
+         <version>v0.1.7</version>
+         <category>battery</category>
+         <description>rectangular black battery with rounded top and contact terminals</description>
+         <min_height>0.04</min_height>
+         <max_height>0.06</max_height>
+         <real_height>0.05</real_height>
+         <min_mass>0.5</min_mass>
+         <max_mass>1.0</max_mass>
+         <color>black</color>
+         <rgba>[0.0, 0.0, 0.0, 1.0]</rgba>
+         <generate_time>20260625093917</generate_time>
+         <gs_model>mesh/sample_gs.ply</gs_model>
+      </extra_info>
+   </link>
+   <custom_data>
+      <quality>
+         <MeshGeoChecker>YES</MeshGeoChecker>
+         <ImageSegChecker>NO, object is truncated and has artifacts on the right side.</ImageSegChecker>
+         <ImageAestheticChecker>4.688856601715088</ImageAestheticChecker>
+         <overall>NO</overall>
+      </quality>
+   </custom_data>
+</robot>

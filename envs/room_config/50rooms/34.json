@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Sofa",
+    "category": "sofa",
+    "anchor": null,
+    "pos_abs": [
+      0.0,
+      -4.0
+    ],
+    "path": "our_assets/room/sofa/5/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Coffee_Table",
+    "category": "coffee table",
+    "anchor": "Sofa",
+    "rel_side": "front",
+    "gap": 0.5,
+    "path": "our_assets/room/coffee table/1/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Floor_Lamp",
+    "category": "floor lamp",
+    "anchor": "Sofa",
+    "rel_side": "left",
+    "gap": 0.0,
+    "path": "our_assets/room/floor lamp/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Potted_Tree",
+    "category": "potted tree",
+    "anchor": "Floor_Lamp",
+    "rel_side": "left",
+    "gap": 0.0,
+    "path": "our_assets/room/potted tree/2/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Display_Stand",
+    "category": "display stand",
+    "anchor": "Coffee_Table",
+    "rel_side": "left",
+    "gap": 0.3,
+    "path": "our_assets/room/display stand/0/mesh/sample.glb",
+    "rotation_deg": 145,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Armchair",
+    "category": "armchair",
+    "anchor": "Coffee_Table",
+    "rel_side": "right",
+    "gap": 0.5,
+    "path": "our_assets/room/armchair/1/mesh/sample.glb",
+    "rotation_deg": -90,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Table_Lamp",
+    "category": "table lamp",
+    "anchor": "Coffee_Table",
+    "rel_side": "top",
+    "gap": 0.0,
+    "path": "our_assets/room/table lamp/3/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Flower_Vase",
+    "category": "flower vase",
+    "anchor": "Table_Lamp",
+    "rel_side": "right",
+    "gap": 0.02,
+    "path": "our_assets/room/flower vase/0/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  },
+  {
+    "name": "Storage_Bin",
+    "category": "storage bin",
+    "anchor": "Sofa",
+    "rel_side": "right",
+    "gap": 0.2,
+    "path": "our_assets/room/storage bin/3/mesh/sample.glb",
+    "rotation_deg": 0,
+    "fix_axis": "y_to_z",
+    "is_static": true
+  }
+]
